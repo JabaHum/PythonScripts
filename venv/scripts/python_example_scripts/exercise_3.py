@@ -9,9 +9,11 @@ guess_count = 0
 guess_limit = 3
 
 while guess_count < guess_limit:
-    guess = int(input("Enter Guess:"))
-    guess_count += 1
+    guess = int(input("Enter Guess:"))  # ask user for a value
+    guess_count += 1  # increment the count every time a guess is made
 
     if guess == secret_number:
         print("You Just Won")
-        break
+        break  # breaks the loop there right value has been guessed
+else:
+    print("You Failed Try Again!!!")
